@@ -1,0 +1,97 @@
+\documentclass[12pt,letterpaper]{hmcpset}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{amsthm}
+\usepackage{enumitem}
+
+\input{macros.tex}
+
+% info for header block in upper right hand corner
+\name{}
+\class{Math178 SU19}
+\assignment{Homework 1}
+\duedate{Due: Wed, May  20, 2020}
+
+\renewcommand{\labelenumi}{{(\alph{enumi})}}
+
+
+\begin{document}
+Feel free to work with other students, but make sure you write up the homework
+and code on your own (no copying homework \textit{or} code; no pair programming).
+Feel free to ask students or instructors for help debugging code or whatever else,
+though.\\
+
+\textit{Note:} You need to create a Github account for submission of the coding part of the homework. Please create a repository on Github to hold all your code and include your Github account username as part of the answer to the coding problems.
+
+\begin{problem}[1]
+(\textbf{Covariance. (Lecture 1 page 17)}) The covariance between two random variables $X$ and $Y$ is defined as:
+$$
+   \cov[X,Y] = \EE[(X-\EE[X])(Y-\EE[Y])].
+$$
+Prove that
+$$
+\cov[X,Y] = \EE[XY]- \EE[X] \EE[Y].
+$$
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+
+
+
+\begin{problem}[2]
+(\textbf{Correlation. (Lecture 1 page 18)}) The correlation between two random variables $X$ and $Y$ is defined as:
+$$
+\text{corr}[X,Y] =\frac{ \cov[X,Y]}{\sqrt{\var[X]\var[Y]}}.
+$$
+Prove that
+\begin{enumerate}
+\item $-1\le\text{corr}[X,Y]\le1$;
+\item $\text{corr}[X,Y]=1$ if and only if $Y=aX+b$ for some parameters $a\neq 0 $ and $b$.
+\end{enumerate}
+
+
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+\begin{problem}[3]
+	(\textbf{Parametrization. (Lecture 1 page 50)}) Let $\alpha(t)$ be a parametrized curve which does not pass through the origin. If $\alpha(t_0)$ is the point of the trace of $\alpha$ closest to the origin and $\alpha'(t_0)\neq0,$ show that the position vector $\alpha(t_0)$ is orthogonal to $\alpha'(t_0)$.
+
+
+\end{problem}
+\begin{solution}
+	\vfill
+\end{solution}
+\newpage
+
+
+
+
+\begin{problem}[4]
+	(\textbf{Extra credit. (Lecture 1 page 52)}) How to create a transformation from the data on some helix to the data of the instructor’s trajectory?
+
+
+\end{problem}
+\begin{solution}
+	\vfill
+\end{solution}
+\newpage
+
+
+\begin{problem}[5]
+	(\textbf{Coding. (Lecture 1 page 54-70)}) Please download the H-MOG dataset from: http://www.cs.wm.edu/~qyang/hmog.html (see also Lecture 1 page 54).
+	 Please read through the data description and do some visualizations if you have time. If you have any visualization result, please email or print out to submit.
+
+
+\end{problem}
+\begin{solution}
+	\vfill
+\end{solution}
+\newpage
+\end{document}
+

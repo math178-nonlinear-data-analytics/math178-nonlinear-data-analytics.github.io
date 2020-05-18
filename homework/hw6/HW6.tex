@@ -1,0 +1,70 @@
+\documentclass[12pt,letterpaper]{hmcpset}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{amsthm}
+\usepackage{enumitem}
+
+\input{macros.tex}
+
+% info for header block in upper right hand corner
+\name{}
+\class{Math178 SU19}
+\assignment{Homework 6}
+\duedate{Due: Fri, June  21, 2019}
+
+\renewcommand{\labelenumi}{{(\alph{enumi})}}
+
+
+\begin{document}
+	Feel free to work with other students, but make sure you write up the homework
+	and code on your own (no copying homework \textit{or} code; no pair programming).
+	Feel free to ask students or instructors for help debugging code or whatever else,
+	though.\\
+	
+	\textit{Note:} You need to create a Github account for submission of the coding part of the homework. Please create a repository on Github to hold all your code and include your Github account username as part of the answer to the coding problems.
+	
+	\begin{problem}[1]
+		(\textbf{1st fundamental form.}) Compute the first fundamental form of a sphere at a point of the coordinate neighborhood given by the parametrization:
+		$$
+	\textbf x(\theta,\psi)=(\sin\theta\cos\psi, \sin\theta\sin\psi, \cos\theta).
+		$$
+	\end{problem}
+	\begin{solution}
+		\vfill
+	\end{solution}
+	\newpage
+	
+	
+	
+	
+	\begin{problem}[2]
+		(\textbf{Area.}) Compute the area of the torus  with the coordinate neighborhood corresponding to the parametrization: 
+		$$\textbf x(u,v)=((a+r\cos u)\cos v, (a+r\cos u)\sin v, r\sin u), ~0<u<2\pi, 0<v<2\pi,$$
+		which covers the torus, except for a meridian and a parallel.
+		
+		
+	\end{problem}
+	\begin{solution}
+		\vfill
+	\end{solution}
+	\newpage
+	
+	
+	
+	\begin{problem}[3]
+		(\textbf{Coding.}) Please use the 6 features (accelerometer: x, y, z and gyroscope: x, y, z) of  H-MOG dataset to do the following:
+		\begin{enumerate}
+\item Pick some users. For each user pick 3 out of the 6 features. (Or if you have time, you can try all the 20 combinations.)
+\item  For each data point of the 3 features $v_1, v_2, v_3$, normalize the vector $\vec{v}=[v_1, v_2, v_3]$  by:
+$$\hat v=\frac{\vec{v}}{||\vec{v}||_2}.$$
+\item Plot the normalized data points (vectors) on a sphere.
+		\end{enumerate}
+Note that a starter file is included under "resource" tab. Please feel free to ask TA if you have any question.	
+		
+	\end{problem}
+	\begin{solution}
+		\vfill
+	\end{solution}
+	\newpage
+\end{document}
+

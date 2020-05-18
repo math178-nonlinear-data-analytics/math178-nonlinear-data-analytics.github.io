@@ -1,0 +1,77 @@
+\documentclass[12pt,letterpaper]{hmcpset}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{amsthm}
+\usepackage{enumitem}
+
+\input{macros.tex}
+
+% info for header block in upper right hand corner
+\name{}
+\class{Math178 SU19}
+\assignment{Homework 2}
+\duedate{Due: Wed, May  29, 2019}
+
+\renewcommand{\labelenumi}{{(\alph{enumi})}}
+
+
+\begin{document}
+Feel free to work with other students, but make sure you write up the homework
+and code on your own (no copying homework \textit{or} code; no pair programming).
+Feel free to ask students or instructors for help debugging code or whatever else,
+though.\\
+
+\textit{Note:} You need to create a Github account for submission of the coding part of the homework. Please create a repository on Github to hold all your code and include your Github account username as part of the answer to the coding problems.
+
+\begin{problem}[1]
+(\textbf{Torsion on multi-V time series.}) For a curve $\alpha(t)=(x(t), y(t), z(t))'$ in $\RR^3$ which is not parametrized by arclength, recall that torsion is defined as:
+$$\tau(t)=\frac{(\alpha'\wedge\alpha'')\cdot\alpha'''}{|\alpha'\wedge\alpha''|^2}$$
+where $\cdot$ is dot product and $\wedge$ means cross product in $\RR^3$.
+
+Assume we fit $\alpha(t)$ around $t_i$ by a cubic curve: 
+$$\alpha(t)=\vec{v_0}+\vec{v_1}(t-t_i)+\vec{v_2}(t-t_i)^2+\vec{v_3}(t-t_i)^3$$
+where $\vec{v_0},\vec{ v_1},\vec{ v_2}, \vec{ v_3}\in \RR^3$. Show that 
+$$\tau(t)=\frac{3(\vec{ v_1}\times \vec{ v_2})\cdot\vec{ v_3}}{|\vec{v_1}\times \vec{v_2}|^2}=\frac{3 \det[\vec{ v_1},\vec{ v_2}, \vec{ v_3}]}{|\vec{v_1}\times \vec{ v_2}|^2}$$
+where $\times$ is cross product and $\det$ stands for determinant and $[\vec{ v_1},\vec{ v_2}, \vec{ v_3}]$ is a matrix with $\vec{ v_1},\vec{ v_2}, \vec{ v_3}$ as its columns.
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+
+
+\begin{problem}[2]
+(\textbf{Quaternions. (Lecture 2 page 20)}) Recall quaternions are defined as $$q=a+b\boldsymbol i+c\boldsymbol j+d\boldsymbol k.  $$ Now if a quaternion is divided into a scalar part and a vector part: $$q=(r, \vec{v})$$
+where $r=a\in \RR$ and $\vec{v}=(b,c,d)'\in\RR^3.$ Prove that
+\begin{enumerate}
+\item $(r_1, \vec{v}_1)+(r_2, \vec{v}_2)=(r_1+r_2, \vec{v}_1+\vec{v}_2).$
+\item  $(r_1, \vec{v}_1)(r_2, \vec{v}_2)=(r_1r_2- \vec{v}_1\cdot\vec{v}_2, r_1\vec{v}_2+r_2\vec{v}_1+\vec{v}_1\times \vec{v}_2)$
+where $\cdot$ is dot product and $\times$ is cross product.
+\end{enumerate}
+
+
+\end{problem}
+\begin{solution}
+    \vfill
+\end{solution}
+\newpage
+
+
+\begin{problem}[3]
+	(\textbf{Coding. }) Please download the H-MOG dataset from: http://www.cs.wm.edu/~qyang/hmog.html (see also Lecture 1 page 54).
+	 Please read through the data description and  do the following:
+	 \begin{enumerate}
+\item Write code to do data pre-processing on H-MOG dataset.\\ More specifically, please pick some users as well as some activities that you are interested in (There are 100 users along with 6 activities in the H-MOG dataset) and extract the accelerometer and gyroscope data. Note that each of the accelerometer and gyroscope data has 3 axis (x-axis, y-axis, z-axis), so in total you will have 6 features.
+\item Write code to calculate multi-V time series curvature on 3 of the 6 features and  visualize your results.
+\item Write code to calculate multi-V time series torsion on 3 of the 6 features and  visualize your results.
+	 \end{enumerate}
+Note that starter file will be provided under "resources" tab on the course web page. You don't need to follow the starter code, and please feel free to use your own code.
+	
+\end{problem}
+\begin{solution}
+	\vfill
+\end{solution}
+\newpage
+\end{document}
+
